@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y && shutdown now
+apt-get update && apt-get dist-upgrade -y && apt autoremove -y && apt autoclean -y && shutdown now
