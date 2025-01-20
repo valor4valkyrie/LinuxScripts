@@ -7,7 +7,7 @@ do
   shred -vzu -n10 "$f";
 done
 
-find "${FILES}" -type d | while read dir;
+for dir in $(find "$FILES" -type d);
 do
   SPACELESS_DIR=$(printf %q "$dir");
   rm -r "$SPACELESS_DIR";
